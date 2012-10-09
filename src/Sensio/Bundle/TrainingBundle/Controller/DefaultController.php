@@ -18,9 +18,11 @@ class DefaultController extends Controller
         return array('name' => $name);
     }
 
+    /**
+    * @Template("SensioTrainingBundle:Default:time.html.twig")
+    */
     public function timeAction()
     {
-    	$template = 'SensioTrainingBundle:Default:time.html.twig';
-    	return $this->render($template, array('time' => date("Y-m-d H:i:s")));
+    	return array('time' => date("Y-m-d H:i:s"));
     }
 }
