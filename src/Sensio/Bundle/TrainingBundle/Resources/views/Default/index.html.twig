@@ -1,0 +1,9 @@
+{% extends "::base.html.twig" %}
+{% block title %}Welcome {{ name }} ! {% endblock %}
+{% block body %}
+	Hello {{ name }}!
+	<br/><br/>
+	Vous êtes ici: {{ path('greeting', {"name" : name}) }}
+
+	<p><a href="{{ path('greeting', {"name" : "Sara"}) }}">Also Greet Sara</a></p>
+{% endblock %}

@@ -1,5 +1,0 @@
-_assetic:
-    resource: .
-    type: assetic
-_app:
-    resource: /Users/abarry/Public/Sites/sf2Training/2.1.2/app/config/routing_dev.yml
