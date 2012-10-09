@@ -1,3 +1,15 @@
+sensio_training:
+    resource: "@SensioTrainingBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+sensio_training_time:
+    pattern:  /what_time
+    defaults:
+      _controller: SensioTrainingBundle:default:time
+
+
+
 # Internal routing configuration to handle ESI
 #_internal:
 #    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
