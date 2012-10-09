@@ -4,6 +4,4 @@
 	Hello {{ name }}!
 	<br/><br/>
 	Vous êtes ici: {{ path('greeting', {"name" : name}) }}
-
-	<p><a href="{{ path('greeting', {"name" : "Sara"}) }}">Also Greet Sara</a></p>
 {% endblock %}
